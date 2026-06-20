@@ -17,6 +17,9 @@ func countHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		fmt.Fprintf(w, "%d", len(body)) // calculate the length of the 
+	}else{
+		w.WriteHeader(http.StatusMethodNotAllowed)
+		return
 	}
 }
 

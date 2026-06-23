@@ -46,10 +46,10 @@ The exercises progress from a simple ping server to more advanced endpoints invo
    ```
 
 2. Go into any exercise folder (e.g.):bash
-  ```bash
-  cd ex01
-  go run main.go
-  ```
+   ```bash
+   cd ex01
+   go run main.go
+   ```
 
 3. Run all tests at once (from root):
    ```bash

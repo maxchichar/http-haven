@@ -16,7 +16,7 @@ func countHandler(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusInternalServerError)
 			return
 		}
-		fmt.Fprintf(w, "%d", len(body)) // calculate the length of the 
+		fmt.Fprintf(w, "%d", len(body)) // calculate the length of the body
 	}else{
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		return
